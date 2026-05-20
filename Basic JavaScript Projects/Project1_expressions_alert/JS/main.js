@@ -25,3 +25,16 @@
 
   //conacetnate two strings and write to document using document.write method
   document.write("<br>"+Sent1+Sent2);
+
+  //get event_id paragraph dom element by id
+  const paragraphEl = document.getElementById("event_id");
+
+  //add event listeneer to paragraph element for mouse over
+  paragraphEl.addEventListener("mouseover", function(){
+    paragraphEl.innerHTML = "The Mouse is currently over me";
+  });
+
+   //add event listeneer to paragraph element for mouse leave
+  paragraphEl.addEventListener("mouseleave", function(){
+    paragraphEl.innerHTML = "The Mouse is currently not over me";
+  });
